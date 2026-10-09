@@ -3,14 +3,14 @@
 A dark, lore-heavy static wiki for a Westeros-inspired LARP set during the reign of King Maegor I.
 
 ## Included features
-- Dark, regal and approachable style
+- Dark, regal, and approachable layout
 - Searchable static homepage
 - Seven kingdoms overview
-- Major houses and a substantial minor-house list
-- Lore and law sections centered on continuity and consequence
-- Magic and dragon approval wording
+- Major houses and a large minor-house list
+- Structured lore and law sections
+- Magic and dragon approvals integrated into the worldbuilding
 - Lore Department and Administration authority notes
-- FAQ section
+- FAQ for common roleplay rules
 
 ## Open locally
 Open `index.html` directly in a browser, or run a local server from the project folder:
@@ -39,4 +39,4 @@ https://lore-bwh.github.io/westeros-larp-wiki/
 ```
 
 ## Notes
-This version is deliberately fuller than the starter build and is meant to feel like a living LARP wiki rather than a simple mockup. You can keep expanding it with custom maps, city pages, faction pages, and individual lore archives.
+This version is intentionally richer and more lore-forward than the starter build. It keeps the tone of a major Westeros-inspired LARP setting while still remaining readable and easy to maintain.
