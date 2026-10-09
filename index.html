@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blood Without Honor — a lore-driven Game of Thrones-inspired LARP wiki for Westeros."
+    />
+    <title>Blood Without Honor | Westeros Wiki</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Blood Without Honor home">
+          <span class="crest">⚔</span>
+          <span>Blood Without Honor</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#kingdoms">Kingdoms</a>
+          <a href="#houses">Houses</a>
+          <a href="#lore">Lore</a>
+          <a href="#authority">Authority</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Westeros • Maegor I Era</p>
+            <h1>The Realm is written in blood, steel, and memory.</h1>
+            <p class="lead">
+              Blood Without Honor is a dark and political Westeros-inspired LARP world where
+              legacy, fealty, ambition, and consequence shape every act. Explore the Seven
+              Kingdoms, the great houses, the laws of the Realm, and the authority of the
+              Lore Department.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#overview">Enter the Realm</a>
+              <a class="button secondary" href="#search">Search the Wiki</a>
+            </div>
+            <ul class="hero-meta">
+              <li>Custom Westeros setting</li>
+              <li>Dragons and magic exist</li>
+              <li>Administration has final authority</li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="panel-box">
+              <h2>Realm Facts</h2>
+              <dl>
+                <div>
+                  <dt>Era</dt>
+                  <dd>Reign of King Maegor I</dd>
+                </div>
+                <div>
+                  <dt>Setting</dt>
+                  <dd>Westeros</dd>
+                </div>
+                <div>
+                  <dt>Power</dt>
+                  <dd>House, bloodline, and fealty</dd>
+                </div>
+                <div>
+                  <dt>Authority</dt>
+                  <dd>Lore Department + Administration</dd>
+                </div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="search section" id="search">
+        <div class="container search-wrap">
+          <label for="wiki-search" class="sr-only">Search the wiki</label>
+          <input
+            id="wiki-search"
+            type="search"
+            placeholder="Search houses, kingdoms, lore, and rules..."
+            aria-label="Search the wiki"
+          />
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">World Overview</p>
+            <h2>A realm of crowns, oaths, and blood.</h2>
+          </div>
+          <div class="story-grid">
+            <article class="info-card wide">
+              <h3>The Nature of the Realm</h3>
+              <p>
+                The Realm is shaped by canon, recorded history, and the consequences of every
+                act committed within it. Every House, family, and claimant contributes to the
+                tide of events that move Westeros forward. What is recorded is not trivial; it is
+                history.
+              </p>
+              <p>
+                In Blood Without Honor, lore is not mere decoration. It is the framework through
+                which politics, warfare, succession, and consequence are judged. Players are
+                expected to understand the foundations of the Realm before attempting to reshape it.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Canon & Consequence</h3>
+              <p>
+                Actions have weight. A House may rise, fall, be broken, or be remembered. A blade
+                struck in war, a decree issued in winter, a marriage made for influence—these all
+                become part of the story.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Immersion Matters</h3>
+              <p>
+                Players are expected to remain in character and pursue goals with reason, rank, and
+                circumstance in mind. OOC knowledge cannot justify IC action where the character
+                would not have known it.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="kingdoms" class="section alt-section">
+        <div class="container">
+          <div class="section-heading inline">
+            <div>
+              <p class="eyebrow">The Seven Kingdoms</p>
+              <h2>Seven crowns, seven loyalties, one uncertain peace.</h2>
+            </div>
+          </div>
+          <div id="kingdom-grid" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="houses" class="section">
+        <div class="container">
+          <div class="section-heading inline">
+            <div>
+              <p class="eyebrow">Houses of the Realm</p>
+              <h2>From the throne to the furthest holdfast.</h2>
+            </div>
+            <div class="house-filters" aria-label="House filters">
+              <button class="filter-button active" data-filter="all" type="button">All</button>
+              <button class="filter-button" data-filter="paramount" type="button">Paramount</button>
+              <button class="filter-button" data-filter="minor" type="button">Minor</button>
+            </div>
+          </div>
+          <div id="house-grid" class="house-grid"></div>
+        </div>
+      </section>
+
+      <section id="lore" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Lore Guidelines</p>
+            <h2>Rules that shape the history of the Realm.</h2>
+          </div>
+
+          <div class="lore-grid">
+            <article class="info-card">
+              <h3>Canon First</h3>
+              <p>
+                Every action must be grounded in established lore, precedent, recognized tradition,
+                and the structures of the Realm. A House cannot act as if history never existed.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Metagaming is Forbidden</h3>
+              <p>
+                A character may only act on information they could reasonably know through decrees,
+                ravens, messengers, or direct IC contact. If the message was not sent to them, it is
+                not theirs to act upon.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Conflict Has Limits</h3>
+              <p>
+                Wars and political action require cause, structure, and fairness. No House may simply
+                declare war without reason, standing, or strategic legitimacy. The Realm is built on
+                consequence.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Deaths and Injuries Endure</h3>
+              <p>
+                Severe injury can cripple a character's capacity, inheritance, and authority. Death is
+                permanent unless a specific approved lore mechanic permits otherwise.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Houses Matter</h3>
+              <p>
+                House limitations, dynasty caps, succession law, and bloodline status all shape what a
+                House may do in war, politics, and inheritance. Identity, blood, and law are all part of
+                the same chain.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>History is Final</h3>
+              <p>
+                Properly recognized events become canon. Retcons are not a tool for regret; they are a
+                last resort for correcting genuine errors or voided records. The Realm remembers.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="magic" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Magic & Dragons</p>
+            <h2>Power exists — but it is never free.</h2>
+          </div>
+
+          <div class="policy-box">
+            <p>
+              Dragons and magic are part of the world, but they are not casual tools for personal gain.
+              Extraordinary power, bloodlines, visions, or magical influence must be justified, documented,
+              and approved by the proper authority before it can be considered canon. The Realm does not
+              tolerate unchecked mythmaking.
+            </p>
+            <p>
+              If a character claims dragon blood, magical insight, supernatural connection, or unusual
+              magical inheritance, it must be supported by a legitimate path within the setting. The
+              Administration may deny, restrict, or modify such claims where they would destabilize the
+              balance of the Realm.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="authority" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Authority Structure</p>
+            <h2>The Lore Department and the final word of the Administration.</h2>
+          </div>
+
+          <div class="authority-grid">
+            <article class="info-card">
+              <h3>Lore Department</h3>
+              <p>
+                The Lore Department is responsible for the interpretation of events, rule applications,
+                historical continuity, and the enforcement of setting integrity. It records actions,
+                validates roleplay outcomes, and guides disputes in keeping with the established lore of
+                the Realm.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Administration</h3>
+              <p>
+                The Administration is the highest authority in the setting. It may confirm, overturn, or
+                define all interpretations where needed, especially in matters of boundaries, policy,
+                extraordinary powers, and final disputes. In all matters, the Administration has the final
+                word.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQs</p>
+            <h2>Common questions from the Realm.</h2>
+          </div>
+
+          <div class="faq-list">
+            <details open>
+              <summary>Do dragons and magic exist in Blood Without Honor?</summary>
+              <p>Yes. They exist within the setting, but they require valid in-world justification and approval before they can be treated as canonical.</p>
+            </details>
+
+            <details>
+              <summary>What is the difference between canon and OOC influence?</summary>
+              <p>Canon is anything established through the lore, history, rules, and recognized IC events of the Realm. OOC coordination or the use of information a character could not reasonably know does not automatically become canon.</p>
+            </details>
+
+            <details>
+              <summary>Who decides disputes or rule conflicts?</summary>
+              <p>The Lore Department handles interpretation and management of lore disputes, while the Administration ultimately has final authority on all matters.</p>
+            </details>
+
+            <details>
+              <summary>Can a House just declare war for no reason?</summary>
+              <p>No. Conflict must have cause, political meaning, and a reasonable relationship to the setting. Unjustified or abusive wars are not accepted.</p>
+            </details>
+
+            <details>
+              <summary>What happens when a character dies?</summary>
+              <p>Death is permanent unless a specific approved lore mechanic permits otherwise. A death can have major consequences for succession, legacy, House stability, and surrounding politics.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Blood Without Honor</p>
+        <p>Westeros • Maegor I • The Realm remembers.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
