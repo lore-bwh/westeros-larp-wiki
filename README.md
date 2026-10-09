@@ -1,6 +1,6 @@
 # Blood Without Honor Wiki
 
-A dark, lore-heavy static wiki for a Westeros-inspired LARP set during the reign of King Maegor I.
+A dark, lore-heavy static wiki for a Westeros-inspired set during the reign of King Maegor I.
 
 ## Included features
 - Dark, regal, and approachable layout
