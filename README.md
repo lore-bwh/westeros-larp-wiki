@@ -1,30 +1,42 @@
-# westeros-larp-wiki
+# Blood Without Honor Wiki
 
-A static, searchable wiki site for a Westeros-inspired LARP set during the reign of King Maegor I.
+A dark, lore-heavy static wiki for a Westeros-inspired LARP set during the reign of King Maegor I.
 
-## Features
-- Dark, regal Game of Thrones-inspired styling
-- World overview for Westeros
-- Seven Kingdoms overview
-- Paramount and minor house listings
-- Lore guidelines and authority section
-- Magic and dragon approval policy
-- Searchable content across the site
+## Included features
+- Dark, regal and approachable style
+- Searchable static homepage
+- Seven kingdoms overview
+- Major houses and a substantial minor-house list
+- Lore and law sections centered on continuity and consequence
+- Magic and dragon approval wording
+- Lore Department and Administration authority notes
+- FAQ section
 
 ## Open locally
-1. Download or clone this repository.
-2. Open `index.html` in a browser, or run a simple local server from the project folder:
+Open `index.html` directly in a browser, or run a local server from the project folder:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000` in your browser.
+Then open:
+
+```text
+http://localhost:8000
+```
+
+## Publish to GitHub Pages
+1. Push this repository to GitHub.
+2. Open the repository settings.
+3. Go to Pages.
+4. Set the source to the `main` branch and root folder.
+5. Save.
+
+Your site will be published at:
+
+```text
+https://lore-bwh.github.io/westeros-larp-wiki/
+```
 
 ## Notes
-This is a strong starting point for a custom LARP wiki. You can expand with:
-- custom house pages
-- personal roleplay character pages
-- faction and court pages
-- approved dragon/magic records
-- additional lore additions from your own setting
+This version is deliberately fuller than the starter build and is meant to feel like a living LARP wiki rather than a simple mockup. You can keep expanding it with custom maps, city pages, faction pages, and individual lore archives.

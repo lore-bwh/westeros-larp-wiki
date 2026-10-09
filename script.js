@@ -58,7 +58,7 @@ const kingdoms = [
     badge: 'Kingdom',
     summary:
       'The seat of royal power, where the Crown is watched, courted, and challenged.',
-    seat: 'King\'s Landing',
+    seat: "King's Landing",
     power: 'Authority, urban power, and court politics',
     region: 'Central-southern Westeros'
   }
@@ -186,6 +186,56 @@ const houses = [
     role: 'Northern lords of terror'
   },
   {
+    name: 'House Glover',
+    type: 'minor',
+    words: 'We Keep the Watch',
+    seat: 'Deepwood Motte',
+    kingdom: 'The North',
+    summary:
+      'A hard-shelled northern house known for vigilance, disciplined men, and old loyalties to Winterfell.',
+    role: 'Keeper of the northern frontier'
+  },
+  {
+    name: 'House Karstark',
+    type: 'minor',
+    words: 'The Sun of Winter',
+    seat: 'Karhold',
+    kingdom: 'The North',
+    summary:
+      'A fierce old northern house whose pride and martial talent have earned them respect and fear alike.',
+    role: 'Northern war house'
+  },
+  {
+    name: 'House Hornwood',
+    type: 'minor',
+    words: 'Winds of the Wild',
+    seat: 'Hornwood',
+    kingdom: 'The North',
+    summary:
+      'A weathered northern line of hunters, steadiness, and old ancestral bonds to the wild woods.',
+    role: 'Old northern house'
+  },
+  {
+    name: 'House Dustin',
+    type: 'minor',
+    words: 'We Remember the Old Ways',
+    seat: 'Barrowton',
+    kingdom: 'The North',
+    summary:
+      'An old and proud family of the North whose name carries weight in matters of land, precedent, and blood.',
+    role: 'House of barrows and lineage'
+  },
+  {
+    name: 'House Flint',
+    type: 'minor',
+    words: 'By Flint and Stone',
+    seat: 'The Flints Finger',
+    kingdom: 'The North',
+    summary:
+      'A rugged coastal northern family with a sharp maritime tradition and a temperament as hard as stone.',
+    role: 'Coastal landholders of the north'
+  },
+  {
     name: 'House Tarth',
     type: 'minor',
     words: 'Pride and Majesty',
@@ -196,20 +246,50 @@ const houses = [
     role: 'Stormland nobility'
   },
   {
-    name: 'House Florent',
+    name: 'House Dondarrion',
     type: 'minor',
-    words: 'No One Accuses Us of Being Too Soft',
-    seat: 'Brightwater Keep',
-    kingdom: 'The Reach',
+    words: 'The Storm Is Upon Us',
+    seat: 'Blackhaven',
+    kingdom: 'The Stormlands',
     summary:
-      'A politically ambitious Reach house known for complex loyalties and sharpened tongues.',
-    role: 'Courtly power in the Reach'
+      'A legendary storm House whose bloodline is entwined with tragedy, resilience, and fierce pride.',
+    role: 'Stormlords of Blackhaven'
+  },
+  {
+    name: 'House Connington',
+    type: 'minor',
+    words: 'No Weakness',
+    seat: 'Griffin\'s Roost',
+    kingdom: 'The Stormlands',
+    summary:
+      'A proud and warlike family of the storm coast, famed for their martial honor and ancient lineage.',
+    role: 'Griffin riders of the coast'
+  },
+  {
+    name: 'House Errol',
+    type: 'minor',
+    words: 'Guard the Crown',
+    seat: 'Haystack Hall',
+    kingdom: 'The Stormlands',
+    summary:
+      'A lesser but steady house of the stormlands, often seen as trustworthy friends and dangerous enemies.',
+    role: 'Steady house of the southern coast'
+  },
+  {
+    name: 'House Swann',
+    type: 'minor',
+    words: 'We Remember the Sea',
+    seat: 'Stonehelm',
+    kingdom: 'The Stormlands',
+    summary:
+      'A maritime and martial house whose connections to the sea and noble blood make them valuable allies.',
+    role: 'Seafarers and lords of Stonehelm'
   },
   {
     name: 'House Blackwood',
     type: 'minor',
     words: 'When the River Runs Black',
-    seat: 'Raven\'s Pool',
+    seat: "Raven's Pool",
     kingdom: 'The Riverlands',
     summary:
       'An old and proud river lord family with deep rivalries and a reputation for resilience.',
@@ -234,6 +314,176 @@ const houses = [
     summary:
       'A proud river fort family with a strong grasp of logistics, defense, and strategic purpose.',
     role: 'Guardians of the river roads'
+  },
+  {
+    name: 'House Mooton',
+    type: 'minor',
+    words: 'Steady Beneath the Rain',
+    seat: 'Mooton',
+    kingdom: 'The Riverlands',
+    summary:
+      'A dependable river lord family whose political influence comes from patience and quiet power.',
+    role: 'Riverland steadiness'
+  },
+  {
+    name: 'House Piper',
+    type: 'minor',
+    words: 'The Song of the River',
+    seat: 'Pinkmaiden',
+    kingdom: 'The Riverlands',
+    summary:
+      'A lyrical, proud, and sometimes impulsive river house whose temperament is as sharp as steel.',
+    role: 'House of the river songs'
+  },
+  {
+    name: 'House Frey',
+    type: 'minor',
+    words: 'We Stand Together',
+    seat: 'The Twins',
+    kingdom: 'The Riverlands',
+    summary:
+      'A wealthy crossing house whose ambitions are as long as their bridges, and whose loyalty is tightly managed.',
+    role: 'Bridge lords of the crossing'
+  },
+  {
+    name: 'House Hightower',
+    type: 'minor',
+    words: 'We Light the Way',
+    seat: 'The Hightower',
+    kingdom: 'The Reach',
+    summary:
+      'One of the oldest and most prestigious noble lines in the Reach, known for wisdom, loyalty, and the burden of old ambition.',
+    role: 'Beacon of the Reach'
+  },
+  {
+    name: 'House Florent',
+    type: 'minor',
+    words: 'No One Accuses Us of Being Too Soft',
+    seat: 'Brightwater Keep',
+    kingdom: 'The Reach',
+    summary:
+      'A politically ambitious Reach house known for flexibility, intrigue, and strategic appetite.',
+    role: 'Courtly power in the Reach'
+  },
+  {
+    name: 'House Redwyne',
+    type: 'minor',
+    words: 'The Wine of the Fields',
+    seat: 'The Arbor',
+    kingdom: 'The Reach',
+    summary:
+      'Masters of the vines and the sea, a great Reach lineage whose wealth and influence are impossible to ignore.',
+    role: 'Wine lords of the Reach'
+  },
+  {
+    name: 'House Rowan',
+    type: 'minor',
+    words: 'We Are the Rowan',
+    seat: 'Goldengrove',
+    kingdom: 'The Reach',
+    summary:
+      'An older Reach house of tradition and careful patience, valued for steady leadership and quiet strength.',
+    role: 'Ancient lordly line of the Reach'
+  },
+  {
+    name: 'House Oakheart',
+    type: 'minor',
+    words: 'Deep Rooted',
+    seat: 'Old Oak',
+    kingdom: 'The Reach',
+    summary:
+      'A House of root, grove, and old customs, with a reputation for connectedness and stubborn pride.',
+    role: 'Ancient Reach house'
+  },
+  {
+    name: 'House Ashford',
+    type: 'minor',
+    words: 'Ashes to Glory',
+    seat: 'Ashford',
+    kingdom: 'The Reach',
+    summary:
+      'A modest but proud Reach line whose name is respected for steadiness and the quiet dignity of old service.',
+    role: 'House of service and order'
+  },
+  {
+    name: 'House Clegane',
+    type: 'minor',
+    words: 'The Hound Remembers',
+    seat: 'Hearthfire',
+    kingdom: 'The Westerlands',
+    summary:
+      'A rough, brutal, and infamous family whose reputation is nearly as sharp as the steel they carry.',
+    role: 'House of force and intimidation'
+  },
+  {
+    name: 'House Lefford',
+    type: 'minor',
+    words: 'Iron and Grain',
+    seat: 'The Rock',
+    kingdom: 'The Westerlands',
+    summary:
+      'A prosperous western house whose wealth and reach make them useful in peace and dangerous in war.',
+    role: 'Wealthy vassals of the west'
+  },
+  {
+    name: 'House Marbrand',
+    type: 'minor',
+    words: 'Red Steel',
+    seat: 'Mara\'s Mark',
+    kingdom: 'The Westerlands',
+    summary:
+      'A martial house with an instinct for violence and a sharp appetite for political maneuvering.',
+    role: 'Lords of the western hills'
+  },
+  {
+    name: 'House Payne',
+    type: 'minor',
+    words: 'Strong as the Stone',
+    seat: 'Payne\'s Hall',
+    kingdom: 'The Westerlands',
+    summary:
+      'A lesser but firmly established western bloodline, notable for steadiness and practical ambition.',
+    role: 'House of western order'
+  },
+  {
+    name: 'House Corbray',
+    type: 'minor',
+    words: 'The Falcon\'s Wing',
+    seat: 'Heart\'s Home',
+    kingdom: 'The Vale',
+    summary:
+      'A proud and competitive Vale house, eager to assert itself in the mountain politics of the east.',
+    role: 'Vale noble family of prestige'
+  },
+  {
+    name: 'House Royce',
+    type: 'minor',
+    words: 'We Remember',
+    seat: 'Runestone',
+    kingdom: 'The Vale',
+    summary:
+      'A storied and respected lineage known for tradition, steel, and the unspoken weight of their ancestry.',
+    role: 'Ancient house of the Vale'
+  },
+  {
+    name: 'House Waynwood',
+    type: 'minor',
+    words: 'Always Faithful',
+    seat: 'Sable Hall',
+    kingdom: 'The Vale',
+    summary:
+      'A steadfast Vale house known for loyalty, old ties, and quiet but decisive actions in the mountains.',
+    role: 'Faithful mountain lords'
+  },
+  {
+    name: 'House Egen',
+    type: 'minor',
+    words: 'The Eagle Watches',
+    seat: 'The Fingers',
+    kingdom: 'The Vale',
+    summary:
+      'A lesser but honorable house of the Vale, shaped by narrow mountain geography and deep old ties.',
+    role: 'House of the mountain passes'
   }
 ];
 
